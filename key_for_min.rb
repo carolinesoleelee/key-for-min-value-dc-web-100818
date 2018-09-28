@@ -4,13 +4,13 @@
 def key_for_min_value(name_hash)
  if name_hash.length == 0
    return nil
- else 
+ else
    new = ""
    smallest = nil
    name_hash.collect do |x,value|
      if(smallest == nil)
        smallest = value
-       new = x 
+       new = x
   else
     if(smallest>value)
       smallest = value
